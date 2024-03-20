@@ -45,8 +45,8 @@ console.log(resultado) // retorna Hola Mundo!
 */
 /*
 let numero = "25"
-let decimal = "25.5"
+let decimal = "25.58161"
 console.log(typeof(parseInt(numero))) // con parseint transformamos un entero (spring a number)
-console.log(parseInt(decimal)) // con parseint envia solo la parte entera
+console.log(parseInt(decimal).toFixed(1)) // con parseint envia solo la parte entera
 console.log(parseFloat(decimal)) 
 */
