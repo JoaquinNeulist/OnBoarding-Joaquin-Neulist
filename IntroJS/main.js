@@ -129,4 +129,4 @@ console.table(mentor)
 // console.log(typeof(nombre))
 
 //let resultado = confirm("estas seguro")
-//console.log(resultadi)
+//console.log(resultado)
