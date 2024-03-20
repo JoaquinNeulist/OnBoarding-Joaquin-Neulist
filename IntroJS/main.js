@@ -1,132 +1,125 @@
 console.log("tu")
-
-/* Low difficulty
+/*
+// Low difficulty
 const myName = "my name is Joaquin"
 const myLastName = "Neulist"
 let myAge = 19
-const myPet = "my pet is call Mila"
+const petName = "my pet is call Mila"
 let petAge = 4
 let fullName = myName +" "+ myLastName
-let presentationText = fullName+" "+myAge+" "+myPet+" "+petAge
-
+let presentationText = fullName+" "+myAge+" "+petName+" "+petAge
 
 console.log(myName)
 console.log(myLastName)
 console.log(myAge)
-console.log(myPet)
+console.log(petName)
 console.log(petAge)
 console.log(fullName)
 console.log(presentationText)
 */
-
-
-
-
-//CLASE DEL 19/03:
-//Datos: string, number, boolean, null, undefined, 
-
-//let, const
+// Medium difficulty
+//1:
 /*
-let apellido = "Neulist"
-console.log(apellido)
- const nombre = "Joaquin"
-console.log(nombre,apellido)
-console.log( `${nombre} ${apellido}` )
-*/
+let sumAges = myAge + petAge
+let subtractAges = myAge - petAge
+let productAges = myAge * petAge
+let divisionAges = myAge / petAge
 
+console.log(sumAges)
+console.log(subtractAges)
+console.log(productAges)
+console.log(divisionAges)
+*/
+//2: (reutilice los let anteriormente usados)
 /*
-console.log( null == 0) // false
-console.log( null >= 0) // true
-console.log( null <= 0) // true
-console.log( null < 0) // false
-console.log( null > 0) // false
-*/
+let DNI = 34258247
+let mySport = "Futbol"
 
-//let number1 = 10
-//let number2 = 20
-
-// console.log(number1 + number2) // 30
-// console.log(number1 * number2) // 200
-//console.log(number1 - number2) // -10
-//console.log(number2 % number1) // 10 (resto)
-//console.log(number2 / number1) // 2 
-//console.log(100 ** 0.5) // 10 (raiz cuadrada ya que potencia a 1/2) 
-//console.log(number1 ** 2) // 100 potenciar al cuadrado  
-/*let number
-console.log(number)
-number = 1 // declaracion
-console.log(number)
-number++
-console.log(number)
-number-- 
-console.log(number)
-//number+=10 // number = number + 10
-//console.log(number)
-console.log(number*2)
-console.log(number)
-*/
-
-//operadores de comparacion
-
-//==, ====, <, >, !=, !==, <=, >=
-
-/*
-console.log( "1" != 0) //distinto valor
-console.log( "0" != 0) // mismo valor
-console.log( "0" !== 0) //distinto dato, aunque mismo valor 
-*/
-
-//operadores logicos
-// ADN && -- OR || (ascii 124)-- NOT !
-/*
-console.log( true && true) //true
-console.log( true && false) //false
-console.log( false && true) //false
-console.log( false && false) //false
-
-console.log( false || true) //true
-console.log( false || true) //true
-console.log( false || true) //true
-console.log( false || false) //false
-
-console.log( !false ) //true
-console.log( !true ) //false
-
-console.log( 0 == false ) // es false
-console.log( "" == false ) // es false
-console.log( "a" == true ) // no es true
-console.log( 1 == true ) // es true
-// (solo aplica a 0 y 1)
-*/
-
-// objeto
-/*
-let nombre = "Joaquin"
-let apellido = "Neulist"
-
-let mentor = {
-    // key || clave = value || valor
-    nombre  : "Joaquin",
-    apellido : "Neulist"
-}
-let mentor2 = {
-    // key || clave = value || valor
-    nombre  : "Guille",
-    apellido : "Cornetti"
+let Student = {
+    myName : "Joaquin Andres",
+    myLastName : "Neulist",
+    DNI : 46443282,
+    mySport : "Voley",
+    myAge : 19,
 }
 
-let arrayMentores = [ mentor , mentor2 ] 
-console.log(mentor.nombre) //Joaquin
-console.log(arrayMentores[1].nombre) //Eduardo
-console.log(arrayMentores)
-console.table(arrayMentores)
-console.log(mentor)
-console.table(mentor)
+console.table(Student)
+console.log(Student.myName)
+console.log(Student.myLastName)
+console.log(Student.DNI)
+console.log(Student.mySport)
+console.log(Student.myAge)
+
+//3: (reutilice los let anteriormente usados)
+
+let pet = ""
+let petRace = ""
+let petWeight = ""
+
+let pet1 = {
+    pet : "Perro",
+    petName : "Fausto",
+    petRace : "Golden Retriever",
+    petWeight : "31 kg",
+    petAge: 13,
+}
+
+console.table(pet1)
+console.log(pet1.pet)
+console.log(pet1.petName)
+console.log(pet1.petRace)
+console.log(pet1.petWeight)
+console.log(pet1.petAge)
 */
+//4:
+/*
+let arrayFruits = ["Apple", "Banana", "Peaches", "Pear", "Tomato"]
+console.table(arrayFruits)
+console.log(arrayFruits)
+console.log(arrayFruits[0])
+console.log(arrayFruits[1])
+console.log(arrayFruits[2])
+console.log(arrayFruits[3])
+console.log(arrayFruits[4])
+*/
+// High difficulty
+//1:
+/*
+let IamAdult = prompt("How old are you?")
 
-// alert("Soy una alerta")
-// let nombre = prompt("ingrese su nombre")
-// console.log(typeof(nombre))
+if(IamAdult >= 18){
+    console.log("You are an adult: " + IamAdult)
+}else{
+    console.log("You are not an adult: " + IamAdult)
+}
+*/
+//2:
+/*
+let arrayNumbers = [0, 24, 10, 2, 7]
 
-//let resultado = confirm("estas seguro")
-//console.log(resultado)
+console.table(arrayNumbers)
+console.log(arrayNumbers)
+console.log(arrayNumbers[0])
+console.log(arrayNumbers[1])
+console.log(arrayNumbers[2])
+console.log(arrayNumbers[3])
+console.log(arrayNumbers[4])
+*/
+//3:
+/*
+const arrayFamily = ["Grandma", "Mother", "Sister", "Brother", "Father"]
+
+console.table(arrayFamily)
+console.log(arrayFamily[0])
+console.log(arrayFamily[1])
+console.log(arrayFamily[2])
+console.log(arrayFamily[3])
+console.log(arrayFamily[4])
+*/
+//4:
+/*
+let randomText ={ 
+    text: "i like so much the " + arrayFruits[1] + " because that i bought " + arrayNumbers[3] +" "+ arrayFruits[1] + " so my " + arrayFamily[0] + " can do a pie of " + arrayFruits[1]
+}
+console.log(randomText.text)
+*/
