@@ -18,7 +18,7 @@ if (estaLloviendo == "si") {
     console.log("No entiendo")
 }
 */
-
+/*
 let planInet = "a"
 
 switch(planInet){
@@ -31,4 +31,6 @@ switch(planInet){
     case "vip":  console.log("Debe pagar $200");
     break;
     default:console.log("Plan desconocido");
+    break;
 }
+*/
