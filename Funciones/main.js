@@ -50,3 +50,10 @@ console.log(typeof(parseInt(numero))) // con parseint transformamos un entero (s
 console.log(parseInt(decimal).toFixed(1)) // con parseint envia solo la parte entera
 console.log(parseFloat(decimal)) 
 */
+
+// Metodos de String
+// let nombre = "  Jota  "
+// console.log(nombre.trim()) // trim quita los espacios
+// console.log(nombre.toLowerCase()) // tlw todo minuscula
+// console.log(nombre.toUpperCase()) // tlw todo mayuscula
+
