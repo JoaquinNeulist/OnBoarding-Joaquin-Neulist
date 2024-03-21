@@ -1,6 +1,36 @@
-// Clase 20/03
+//Conditional Excersises
+// Low difficulty
+//1:
+let num1 = 5
+let num2 = 4
+if(num1 > num2){
+    console.log(num1)
+}else{
+    console.log(num2)
+}
+//2
+if(num1 > num2){
+    console.log(num2)
+}else if(num1 < num2){
+    console.log(num1)
+}else{
+    console.log("The numbers are equal")
+}
+//3:
+if(num1 == num2){
+    console.log("The numbers are equal")
+}else{
+    console.log("The numbers are different")
+}
+//4
+let date1 = "2018-9-2"
+let date2 = "2023-7-5"
+if (date1>date2) {
+    
+}else{}
 
-console.log("hola")
+
+// Clase 20/03
 
 /*let estaLloviendo 
 estaLloviendo = prompt("Ingrese si llueve o no")
