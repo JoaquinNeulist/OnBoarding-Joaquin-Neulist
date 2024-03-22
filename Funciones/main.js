@@ -1,3 +1,9 @@
+// Low difficulty
+function add() {
+    
+  console.log(100 * 20)
+}
+console.log(add())
 // Funcion 
 /*
 function saludo() {
