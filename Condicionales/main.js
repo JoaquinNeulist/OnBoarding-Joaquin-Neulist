@@ -72,15 +72,16 @@ switch(color){
 }
 */
 //2:
-let num1 = prompt("Enter a number (1 to 100):")
-let num2 = prompt("Enter another number (1 to 100)")
-const sum = num1+num2
+/*
+let num1 = parseInt(prompt("Enter a number (1 to 100):"))
+let num2 = parseInt(prompt("Enter another number (1 to 100)"))
+const add = num1+num2
 const subt = num1-num2
 const mult = num1*num2
 const div = num1/num2
 let operation = prompt("What operation do you want to do with the numbers?")
 switch(operation){
-case 'sum': alert("the sum of "+num1+" + "+num2+" is "+ sum)
+case 'sum': alert("the sum of "+num1+" + "+num2+" is "+ add)
 break;
 case 'subtraction': alert("the subtraction of "+num1+" - "+num2+" is "+ subt)
 break;
@@ -91,40 +92,96 @@ break;
 default: alert("operation is not in the list")
 break;
 } 
-
-
-
-// Clase 20/03
-
-/*let estaLloviendo 
-estaLloviendo = prompt("Ingrese si llueve o no")
-
-if (estaLloviendo == "si") {
-    console.log("No salgo a correr")
-}else if(estaLloviendo == "no"){
-    let tengoGanas = confirm("tenes ganas de salir a correr?")
-    if(tengoGanas){
-        console.log("Salgo a correr")
-    }else{
-        console.log("No salgo a correr")
-    }
-}else{
-    console.log("No entiendo")
-}
 */
+//3:
 /*
-let planInet = "a"
-
-switch(planInet){
-    case "bajo":  console.log("Debe pagar $50");
-    break;
-    case "medio":  console.log("Debe pagar $75");
-    break;
-    case "alto":  console.log("Debe pagar $100");
-    break;
-    case "vip":  console.log("Debe pagar $200");
-    break;
-    default:console.log("Plan desconocido");
-    break;
+let Person1 = {
+    name : "Joaco",
+    height : 179.2,
+    age : 19    
+}    
+let Person2 = {
+    name : "Andy",
+    height : 176.4,
+    age : 20
+}
+if(Person2.height>Person1.height){
+    console.log("The taller person is "+Person2.name+" with a height of "+Person2.height)
+}else if(Person2.height<Person1.height){
+    console.log("The taller person is "+Person1.name+" with a height of "+Person1.height)
+}else{
+    console.log("Both people measure the same")
+}
+if(Person2.age>Person1.age){
+    console.log("The oldest person is "+Person2.name+" with a age of "+Person2.age)
+}else if(Person2.age<Person1.age){
+    console.log("The oldest person is "+Person1.name+" with a age of "+Person1.age)
+}else{
+    console.log("Both people are the same age")
 }
 */
+//4:
+//Uso de logica (AND) para colocar todo dentro de una unica condicion
+/*
+let name = prompt("Enter your name:")
+let age = parseInt(prompt("Enter your age"))
+let height = parseFloat(prompt("how tall are you?"))
+let vision = parseInt(prompt("On a scale of 1 to 10 how good is your vision?"))
+
+if (age >= 18 && height >=110 && vision>=8) {
+    console.log("Yor are qualified to drive")
+}else{ console.log("You are not qulified to drive")}
+*/
+//5:
+/*
+let age = parseInt(prompt("Enter your age:"))
+if (0 <= age&&age <= 12) {
+    alert("You are a infant")
+} else {if(13 <= age&&age <=18)
+   { alert("You are a adolescent")
+}else {if(19 <= age&&age <=45){
+ alert("You are a older young")
+}else {if(100 > age&&age > 45){
+    alert("You are elderly")
+}else{
+    alert("Is he really that old? "+age)
+}
+}
+}
+}
+*/
+//6:
+/*
+let number = parseInt(prompt("Enter a number from 1 to 3:"))
+if (number>=1&&number<=3) {
+    alert("The number entered is "+number)
+    alert("Twice the number entered is "+2*number)
+    alert("Three times the number entered is "+3*number)
+} else {
+    alert("That value is not allowed")
+}
+*/
+// High difficulty
+let Cname = prompt("Enter your name:")
+let Vip = confirm("Do you have a VIP pass?")
+if (Cname = "Joaquin") {
+    alert("Welcome")
+} else {if (Vip = true) {
+    alert("Welcome")
+} else {
+    let entrance = confirm("Do you have a ticket?")
+    switch (Entrance) {
+        case true:
+            alert("Welcome")
+            break;
+        case false:
+            alert("Goodbye")
+            break;
+        default:
+            break;
+    }
+    
+}
+    
+}
+
