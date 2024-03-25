@@ -1,6 +1,32 @@
 //Loops exercises
 // Low difficulty
+//1:
+/*
+let num = parseInt(prompt("Enter a number between 1 and 100:"))
+if(num<1||num>100||isNaN(num)){
+    alert("Error: Wrong number")
+}else{
+    console.log("the numbers between "+num+" and 0 are: ")
+    for (let i = num; i>=0 ; i--) {
+        console.log(i);
+}
+}
+*/
+//2:
+/*
+let num = parseInt(prompt("Enter a number between 1 and 10:"))
+if (num<1||num>10||isNaN(num)) {
+    alert("Error: Wrong number")
+} else {
+    console.log("The first 10 multiples are: ")
+    for (let i =1; i<=10; i++) {
+        console.log(num+"*"+i+"="+num*i);
+    }
+}
+*/
+//3:
 
+f
 
 // Clase del 22/03
 
@@ -40,11 +66,13 @@ for (const key in mentor) {
     }
 }
 */
+/*
 let array = []
 for (let index = 0; index < 5; index++) {
     array[index]=parseInt(prompt("ingrese un numero"))
     
 }
+*/
 // while => True
 /*
 let booleano = !confirm("Esta seguro?")
