@@ -164,24 +164,27 @@ if (number>=1&&number<=3) {
 // High difficulty
 let Cname = prompt("Enter your name:")
 let Vip = confirm("Do you have a VIP pass?")
-if (Cname = "Joaquin") {
+let ticket = confirm("Do you have a ticket?")
+if (Cname == "Joaquin" || Vip == true) {
     alert("Welcome")
-} else {if (Vip = true) {
-    alert("Welcome")
-} else {
-    let entrance = confirm("Do you have a ticket?")
-    switch (Entrance) {
-        case true:
-            alert("Welcome")
-            break;
-        case false:
-            alert("Goodbye")
-            break;
-        default:
-            break;
+} else if (ticket == true) {
+    let use = confirm("Do you want to use it?")
+    if (use == true) {
+      alert("Welcome")
+    } else {
+        alert("Goodbye soldier")
     }
-    
-}
-    
+}else{ 
+    let buy = confirm("Do you want to buy?")
+    if (buy==true) {
+       let money = parseInt(prompt("How much money do you have available?"))
+    if (money >= 1000) {
+        alert("Succesful sale, Welcome")
+    } else {
+        alert("Card denied")
+    }
+    }else{
+        alert("Goodbye")
+    }
 }
 
