@@ -1,3 +1,7 @@
+//Loops exercises
+// Low difficulty
+
+
 // Clase del 22/03
 
 //Tipos de bucles:
