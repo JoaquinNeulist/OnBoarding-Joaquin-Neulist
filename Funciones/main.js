@@ -140,22 +140,35 @@ function ex2(fName, lName, age, data) {
 ex2()
 */
 //4:
-let Name = function(name) {
+/*
+let giveName = function(name) {
     name = prompt("Enter your name")
     alert("Hello, my name is "+name)
+    return name
 }
-Name()
-let calculateAge = function (currentYear, Birthyear) {
-    Birthyear = parseInt(prompt("Enter the year you were born"))
-    currentYear = parseInt(prompt("Enter the current year"))
-    alert("Your age is "+(currentYear-Birthyear))
-}
-calculateAge()
-function functionsJoined(Name, calculateAge) {
-    alert(Name + calculateAge)
-}
-functionsJoined()
 
+let calculateAge = function () {
+    let currentYear
+    let Birthyear = parseInt(prompt("Enter the year you were born"))
+    if (Birthyear <=1920&&Birthyear>=2025) {
+        alert("Enter your real born year")
+    }
+    currentYear = parseInt(prompt("Enter the current year"))
+    if (currentYear<2024&&2024<currentYear) {
+        alert("Enter the Real current year")
+    }
+    alert("Your age is "+(currentYear-Birthyear))
+    let age = currentYear-Birthyear
+    return age
+}
+
+function functions() {
+    let nombre = giveName();
+    let edad = calculateAge();
+    alert("Hello, my name is "+nombre+" and my age is "+edad)
+}
+functions()
+*/
 
 // Funcion 
 /*
