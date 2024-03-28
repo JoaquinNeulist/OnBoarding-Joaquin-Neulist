@@ -27,6 +27,7 @@ footer {
 }
 
 a {
+    background-color: white;
     text-decoration: none;
     color: black;
     border: 1px solid black;
@@ -40,4 +41,11 @@ main {
     align-items: center;
     justify-content: center;
     flex-grow: 1;
+}
+#conteiner{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
 }
