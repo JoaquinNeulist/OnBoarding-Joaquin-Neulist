@@ -9,7 +9,7 @@ for (let i = 0; i < headfoot.length; i++) {
 //
 let nombreCohort = document.querySelector('p')
 //
-nombreCohort.innerText = 'Joaquin Andres Neulist -  Cohort 54'
+nombreCohort.innerText = 'Joaquin Andres Neulist - Cohort 54'
 //
 let conteiner = document.getElementById("conteiner")
 const fruit = [] 

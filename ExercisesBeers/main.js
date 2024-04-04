@@ -1,5 +1,5 @@
 //1:
-let printMessage = message => console.log(message)
+// let printMessage = message => console.log(message)
 //2:
 /*
 let createMultiplication = (num1, num2) => {
@@ -7,9 +7,9 @@ let createMultiplication = (num1, num2) => {
     console.log(res) 
 }
 createMultiplication(2,4)
-*/
+
 //3:
-/*
+
 const array = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 let listaNueva = array.map(createMultiplication)
 console.log(listaNueva)
@@ -34,12 +34,12 @@ for (let i = 0; i < 10; i++) { //saca a la consola hasta el numero 10, el nombre
 }
 */
 //6:
-/*
-let nombreCerveza = prompt("Enter a beer name:") //Si se quiere hacer con prompt 
+
+let nombreCerveza =  "Buzz"//prompt("Enter a beer name:") //Si se quiere hacer con prompt 
 let returnBeer = (beers, nombreCerveza) => beers.find(beers => beers.name === nombreCerveza)
 let beersFound = returnBeer(beers, nombreCerveza) //Si no se quiere hacer con prompt, ingresar nombre de la cerveza (EJ "Buzz") en donde dice nombreCerveza
 console.log(beersFound)
-*/
+
 //7:
 /*
 let fBeers
@@ -64,7 +64,7 @@ if (beersIndex!== -1) {
 }
 */
 //9:
-// abv <tbody 10
+// abv < 10
 /*
 let minusAlcBeers = function (beers) {
     const filtBeer = beers.filter(beers => beers.abv < 10);
