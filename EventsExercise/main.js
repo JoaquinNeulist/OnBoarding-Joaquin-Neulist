@@ -53,28 +53,29 @@ let convertBoton = document.getElementById('convertButton')
 let deleteBoton = document.getElementById('deleteButton')
 let inputLocal = document.getElementById('inputLocal')
 let inputDolar = document.getElementById('inputDolar')
-let monedaLocal = parseFloat(inputLocal.value);
-let dolar = parseFloat(inputDolar.value);
 let clearInputs = function() {
     inputDolar.value = null;
     inputLocal.value = null;
 }
-let convercion = function(){
-    if (isNaN(monedaLocal) || isNaN(dolar)) {
-        return; 
-    }
-    if (monedaLocal <= 0) {
-        inputDolar.value = null;
-        alert("Ingrese un valor válido para la moneda local");
-        return;
-    }
-    if (dolar <= 0) {
-        inputLocal.value = null;
-        alert("Ingrese un valor válido para los dólares");
+let localtodolar = function() {
+    let monedaLocal = parseFloat(inputLocal.value);
+    if (isNaN(monedaLocal) || monedaLocal <= 0) {
+        alert("Ingrese valores válidos de moneda local");
         return;
     }
     inputDolar.value = monedaLocal / 500;
+}
+
+let dolartolocal = function() {
+    let dolar = parseFloat(inputDolar.value);
+    if (isNaN(dolar) || dolar <= 0) {
+        alert("Ingrese valores válidos de dólares");
+        return;
+    }
     inputLocal.value = dolar * 500;
 }
-convertBoton.addEventListener('click', convercion)
+
+
+convertBoton.addEventListener('click', localtodolar)
+convertBoton.addEventListener('click', dolartolocal)
 deleteBoton.addEventListener('click', clearInputs)
