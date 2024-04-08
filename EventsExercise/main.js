@@ -16,8 +16,8 @@ boton.addEventListener('click',  e => changeRed()
 )
 }
 )
-*/
-/*
+
+
 //2:
 let input = document.getElementById("inputText")
 let divText = document.getElementById("divText")
