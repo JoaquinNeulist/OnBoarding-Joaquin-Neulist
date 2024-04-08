@@ -1,21 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <script src="https://cdn.tailwindcss.com"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
     <title>Events</title>
-</head>
-<body>
+  </head>
+  <body>
     <main>
-        <div>
+      <div id="divMain">
+        <!-- 1:
             <div id="divColor">
                 <p>Gray</p>
             </div>
             <button id="boton">Change</button>
+    -->
+        <!-- 2:   
+            <div id="divText">
+                
+            </div>
+            <label>
+                <input id="inputText" type="text">
+            </label>
+            <button id="secondBoton">Reset</button>
+    -->
+        <!--3: 
+            <div id="divDatos">
+                <div class="separadores">
+                    <h2>Estatura</h2>
+                    <label>en centimetros
+                    <input type="number" id="inputEstatura">
+                    </label>
+                    </div>
+                    <div class="separadores">
+                    <h2>Peso</h2>
+                    <label>en kilogramos
+                    <input type="number" id="inputPeso">
+                    </label>
+                    </div>
+                    <button id="thirdBoton">Calculate</button>
+                    <div class="separadores">
+                    <h2>Resultado</h2>
+                    <label>Su indice de masa corporal es
+                    <input type="number" id="inputResult">
+                    </label>
+                </div>
+            </div>
+    -->
+        <div id="divDatos">
+          <h1>Local a Dolar</h1>
+          <p>(si quiere hacer de dolar a local solo coloque el numero de dolares que tiene en el monto en dolares)</p>
+          <div class="separadores">
+            <h2>Monto moneda local</h2>
+            <label
+              >sin comas ni puntos
+              <input type="number" id="inputLocal" />
+            </label>
+          </div>
+          <div class="separadores">
+            <h2>Monto en dolares</h2>
+            <label
+              >sin comas ni puntos
+              <input type="number" id="inputDolar" />
+            </label>
+          </div>
+          <div class="botonspace">
+            <button id="convertButton">Convert</button>
+            <button id="deleteButton">Delete</button>
+          </div>
         </div>
+      </div>
     </main>
     <script src="./main.js"></script>
-</body>
+  </body>
 </html>

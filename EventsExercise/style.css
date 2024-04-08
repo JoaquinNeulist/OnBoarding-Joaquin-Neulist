@@ -3,29 +3,102 @@ main{
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 100vh;
+    height: 90vh;
 }
 main>div{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 70%;
-    height: 100%;
+    width: 65%;
+    height: 85%;
     flex-direction: column;
+    margin: 1rem;
 }
 #divColor{
     display: flex;
     background-color: rgba(128, 128, 128, 0.40);
-    height: 75%;
-    width: 75%;
+    height: 550px;
+    width: 575px;
     align-items: center;
     justify-content: center;
     border: 4px solid gray;
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
 }
 #boton{
     border: 4px solid black;
     width: 25%;
     background-color: rgba(255, 220, 0, 0.886);
     font-family: sans-serif;
+}
+#divText{
+    width: 450px;
+    height: 450px;
+    margin-bottom: 1rem;
+    background-color: rgba(128, 128, 128, 0.595);
+    border: 2px solid gray;
+}
+#inputText{
+    width: 450px;
+    height: 50px;
+    border: 1px solid black;
+    margin-bottom: 2rem;
+}
+#secondBoton{
+    background-color: chocolate;
+    width: 250px;
+    border: 4px solid brown;
+    height: 50px;
+}
+#divDatos{
+    text-align: center;
+    height: 750px;
+    width: 500px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    border: 4px solid black;
+    background-color: rgba(128, 128, 128, 0.4);
+}
+.separadores{
+    display: flex;
+    flex-direction: column;
+    border: 4px;
+    width: 50%;
+    height: 25%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem;
+}
+#inputPeso,
+#inputEstatura,
+#inputResult{
+width: 250px;
+height: 30px;
+text-align: center;
+}
+#thirdBoton{
+    width: 75%;
+    height: 50px;
+    background-color: orange;
+    border: 2px solid black;
+}
+#inputLocal,
+#inputDolar{
+width: 250px;
+height: 30px;
+text-align: center;
+}
+#deleteButton,
+#convertButton{
+    width: 150px;
+    height: 50px;
+    background-color: orange;
+    border: 2px solid black;
+    margin-bottom: 0.45rem;
+}
+.botonspace{
+    display: flex;
+    gap: 4rem;
 }
