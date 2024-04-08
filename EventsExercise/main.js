@@ -49,28 +49,46 @@ thirdBoton.addEventListener('click', resultadoIMC)
 */
 /*
 //4:
-let convertBoton = document.getElementById('convertButton')
-let deleteBoton = document.getElementById('deleteButton')
+//Tuve que corregirlos ya que lo habia hecho para una sola ventana/div
+let convertBoton1 = document.getElementById('convertButton1')
+let deleteBoton1 = document.getElementById('deleteButton1')
+let convertBoton2 = document.getElementById('convertButton2')
+let deleteBoton2 = document.getElementById('deleteButton2')
 let inputLocal = document.getElementById('inputLocal')
 let inputDolar = document.getElementById('inputDolar')
-let clearInputs = function() {
+let inputLocal1 = document.getElementById('inputLocal1')
+let inputDolar1 = document.getElementById('inputDolar1')
+
+let clearInputs1 = function() {
     inputDolar.value = null;
     inputLocal.value = null;
 }
-let convert = function() {
+let clearInputs2 = function() {
+    inputDolar1.value = null;
+    inputLocal1.value = null;
+}
+let convert1 = function() {
     let monedaLocal = parseFloat(inputLocal.value);
-    let dolar = parseFloat(inputDolar.value);
-    if ((!monedaLocal || monedaLocal <= 0) && (!dolar || dolar <= 0)) {
-        alert("Ingrese un valor válido para la moneda local o los dólares");
+    if (!monedaLocal || monedaLocal <= 0) {
+        alert("Ingrese un valor válido para la moneda local");
         return;
     }
     if (monedaLocal && monedaLocal > 0) {
         inputDolar.value = monedaLocal / 500;
     }
+} //Los if toman de condicion por si el usuario intenta ingresar ningun valor o ingresa valores negativos que no son validos
+let convert2 = function() {
+    let dolar = parseFloat(inputDolar1.value);
+    if ( !dolar || dolar <= 0){
+        alert("Ingrese un valor válido para los dólares");
+        return;
+    }
     if (dolar && dolar > 0) {
-        inputLocal.value = dolar * 500;
+        inputLocal1.value = dolar * 500;
     }
 } //Los if toman de condicion por si el usuario intenta o no ingresar ningun valor o ingresa valores negativos que no son validos
-convertBoton.addEventListener('click', convert)
-deleteBoton.addEventListener('click', clearInputs)
+convertBoton1.addEventListener('click', convert1)
+deleteBoton1.addEventListener('click', clearInputs1)
+convertBoton2.addEventListener('click', convert2)
+deleteBoton2.addEventListener('click', clearInputs2)
 */
